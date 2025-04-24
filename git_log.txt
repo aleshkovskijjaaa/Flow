@@ -1,0 +1,113 @@
+
+C:\Users\Professional>cd C:\Users\Professional\ooo
+
+C:\Users\Professional\ooo>git init
+Initialized empty Git repository in C:/Users/Professional/ooo/.git/
+
+C:\Users\Professional\ooo>git checkout -b main
+Switched to a new branch 'main'
+
+C:\Users\Professional\ooo>git checkout -b develop
+Switched to a new branch 'develop'
+
+C:\Users\Professional\ooo>git checkout -b feature/add-dag
+Switched to a new branch 'feature/add-dag'
+
+C:\Users\Professional\ooo>git remote add origin  https://github.com/aleshkovskijjaaa/Flow
+
+C:\Users\Professional\ooo>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/aleshkovskijjaaa/Flow'
+
+C:\Users\Professional\ooo>git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+C:\Users\Professional\ooo>git checkout -b main
+Switched to a new branch 'main'
+
+C:\Users\Professional\ooo>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/aleshkovskijjaaa/Flow'
+
+C:\Users\Professional\ooo>git checkout -b main
+Switched to a new branch 'main'
+
+C:\Users\Professional\ooo>git commit --allow-empty -m "Initial commit"
+[main (root-commit) 08f4722] Initial commit
+
+C:\Users\Professional\ooo>git remote add origin https://github.com/aleshkovskijjaaa/Flow
+error: remote origin already exists.
+
+C:\Users\Professional\ooo>git push -u origin main
+Enumerating objects: 2, done.
+Counting objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 174 bytes | 174.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/aleshkovskijjaaa/Flow
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\Professional\ooo>git checkout develop
+error: pathspec 'develop' did not match any file(s) known to git
+
+C:\Users\Professional\ooo>git commit --allow-empty -m "Initial commit"
+[main e3b13f7] Initial commit
+
+C:\Users\Professional\ooo>git push -u origin develop
+error: src refspec develop does not match any
+error: failed to push some refs to 'https://github.com/aleshkovskijjaaa/Flow'
+
+C:\Users\Professional\ooo>git checkout develop
+error: pathspec 'develop' did not match any file(s) known to git
+
+C:\Users\Professional\ooo>git checkout -b develop
+Switched to a new branch 'develop'
+
+C:\Users\Professional\ooo>git commit --allow-empty -m "Initial commit"
+[develop 59af093] Initial commit
+
+C:\Users\Professional\ooo>git remote add origin https://github.com/aleshkovskijjaaa/Flow
+error: remote origin already exists.
+
+C:\Users\Professional\ooo>git push -u origin develop
+Enumerating objects: 2, done.
+Counting objects: 100% (2/2), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 268 bytes | 268.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/aleshkovskijjaaa/Flow/pull/new/develop
+remote:
+To https://github.com/aleshkovskijjaaa/Flow
+ * [new branch]      develop -> develop
+branch 'develop' set up to track 'origin/develop'.
+
+C:\Users\Professional\ooo>git checkout -b feature/add-dag
+Switched to a new branch 'feature/add-dag'
+
+C:\Users\Professional\ooo>git add main.py
+
+C:\Users\Professional\ooo>git commit -m "Add initial DAG for weather data pipeline"
+[feature/add-dag 12b4fd2] Add initial DAG for weather data pipeline
+ 1 file changed, 69 insertions(+)
+ create mode 100644 main.py
+
+C:\Users\Professional\ooo>git push -u origin feature/add-dag
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1011 bytes | 1011.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature/add-dag' on GitHub by visiting:
+remote:      https://github.com/aleshkovskijjaaa/Flow/pull/new/feature/add-dag
+remote:
+To https://github.com/aleshkovskijjaaa/Flow
+ * [new branch]      feature/add-dag -> feature/add-dag
+branch 'feature/add-dag' set up to track 'origin/feature/add-dag'.
+
+C:\Users\Professional\ooo>
